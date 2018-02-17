@@ -1,8 +1,8 @@
 
 <header class="navbar-fixed">
-        <nav class="#0097a7 cyan darken-2">
+        <nav class="yellow cyan darken-2">
             <div class="container  nav-wrapper">
-              <%= link_to "EasyNotes", root_path, class:"brand-logo" %>
+              <%= link_to "EasyBooks", root_path, class:"brand-logo" %>
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 
               <ul class="right hide-on-med-and-down">
@@ -37,13 +37,13 @@
                   
                   <ul class="side-nav" id="mobile-demo">
                             
-                             <li>
+                  <li>
                            <%= link_to 'Inserisci annuncio', new_content_path %>
                   </li>  
 
-                            <li>
+                  <li>
                                     <%= link_to "About", about_path %>
-                            </li>
+                  </li>
                   
                   <% if user_signed_in? %>
                             <li>

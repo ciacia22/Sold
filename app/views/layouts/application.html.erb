@@ -14,10 +14,14 @@
 
 <%= render "layouts/header" %>
 
+<%= render "pages/slider" if action_name == "home" %> 
 
-<main class="ilike-blue-container">    
+<main class="container">
+
     <%= yield %>
 </main>
+<%= render "pages/icon" if action_name == "home" %> 
+
 
 </div>
 
